@@ -3,13 +3,13 @@ const score = document.getElementById("score");
 const days = document.getElementById("days");
 const endScreen = document.getElementById("endScreen");
 
-daysLeft = 40;
-gameOverNumber = 30;
+daysLeft = 50;
+gameOverNumber = 20;
 loopPlay = false;
 
 function start() {
     count = 0;
-    getFaster = 4500;
+    getFaster = 4000;
     daysRemaining = daysLeft;
 
     canvas.innerHTML = "";
