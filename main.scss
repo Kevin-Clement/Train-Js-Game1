@@ -64,7 +64,7 @@ body {
     }
 
     #start {
-        margin: 2rem 2rem 0;
+        margin: 1.3rem 1.3rem 0;
         padding: 1rem 2rem;
         background: rgba(252, 49, 49, 0.699);
         border-radius: 5px;
@@ -114,20 +114,21 @@ body {
 
     .scoreboard {
         color: #eee;
-        padding-bottom: 1rem;
+        padding-bottom: .5rem;
+        padding-top: 1.3rem;
 
         .kills {
             font-size: 2rem;
 
             #score {
                 font-weight: bold;
-                font-size: 3rem;
+                font-size: 1.5rem;
                 color: #ff0000e1;
             }
         }
 
         .confinement {
-            font-size: 1.6rem;
+            font-size: 1.2rem;
 
             #days {
                 color: #ff0000e1;

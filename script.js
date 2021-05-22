@@ -2,6 +2,7 @@ const canvas = document.getElementById("canvas");
 const score = document.getElementById("score");
 const days = document.getElementById("days");
 const endScreen = document.getElementById("endScreen");
+const numberVirus = document.getElementById("numberVirus");
 
 daysLeft = 50;
 gameOverNumber = 20;
@@ -37,6 +38,7 @@ function start() {
             }
         }, randomTime);
         
+        numberVirus.innerHTML = `${canvas.childElementCount}`
         console.log(canvas.childElementCount)
     }
 
