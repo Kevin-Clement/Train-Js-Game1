@@ -22,6 +22,7 @@ function start() {
 
     function game() {
         let randomTime = Math.round(Math.random() * getFaster);
+        
         getFaster > 700 ? getFaster = (getFaster * 0.90) : '';
 
 
@@ -53,6 +54,11 @@ function start() {
         endScreen.style.visibility = "visible";
         endScreen.style.opacity = "1";
         loopPlay = false;
+
+        if(accuracy < 50){
+            gameOver();
+        }
+        
     }
     
 }
@@ -92,6 +98,8 @@ document.addEventListener("click", function(e){
         score.innerHTML = count;
     };
 })
+
+
 
 // countdown click
 canvas.addEventListener("click", () => {
