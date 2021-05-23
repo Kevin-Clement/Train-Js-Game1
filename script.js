@@ -10,7 +10,7 @@ loopPlay = false;
 
 function start() {
     count = 0;
-    getFaster = 4000;
+    getFaster = 5000;
     daysRemaining = daysLeft;
 
     canvas.innerHTML = "";
@@ -24,7 +24,7 @@ function start() {
     function game() {
         let randomTime = Math.round(Math.random() * getFaster);
         
-        getFaster > 700 ? getFaster = (getFaster * 0.90) : '';
+        getFaster > 700 ? getFaster = (getFaster * 0.95) : '';
 
 
         setTimeout(() => {
@@ -57,7 +57,7 @@ function start() {
         endScreen.style.opacity = "1";
         loopPlay = false;
 
-        if(accuracy < 50){
+        if(accuracy < 60){
             gameOver();
         }
         
@@ -80,12 +80,12 @@ function virusPop () {
     virus.style.setProperty("--y", `${y}px`);
 
     let plusMinus = Math.random() < 0.5 ? -1 : 1;
-    let trX = Math.random() * 3000 * plusMinus;
-    let trY = Math.random() * 3000 * plusMinus;
+    let trX = Math.random() * 5000 * plusMinus;
+    let trY = Math.random() * 5000 * plusMinus;
     virus.style.setProperty("--trX", `${ trX }%`);
     virus.style.setProperty("--trY", `${ trY }%`);
 
-    
+    console.log(trX)
     canvas.appendChild(virus);
 
 }
