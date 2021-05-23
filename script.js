@@ -24,7 +24,7 @@ function start() {
     function game() {
         let randomTime = Math.round(Math.random() * getFaster);
         
-        getFaster > 700 ? getFaster = (getFaster * 0.95) : '';
+        getFaster > 700 ? getFaster = (getFaster * 0.90) : '';
 
 
         setTimeout(() => {
@@ -80,12 +80,12 @@ function virusPop () {
     virus.style.setProperty("--y", `${y}px`);
 
     let plusMinus = Math.random() < 0.5 ? -1 : 1;
-    let trX = Math.random() * 5000 * plusMinus;
-    let trY = Math.random() * 5000 * plusMinus;
+    let trX = Math.random() * 3000 * plusMinus;
+    let trY = Math.random() * 3000 * plusMinus;
     virus.style.setProperty("--trX", `${ trX }%`);
     virus.style.setProperty("--trY", `${ trY }%`);
 
-    console.log(trX)
+    
     canvas.appendChild(virus);
 
 }
