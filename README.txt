@@ -1,1 +1,1 @@
-# Jeu Javascript
+# Jeu en Javascript
