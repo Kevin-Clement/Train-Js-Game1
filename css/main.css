@@ -78,7 +78,7 @@ body #endScreen .youWin span {
 body #start {
   margin: 1.3rem 1.3rem 0;
   padding: 1rem 2rem;
-  background: rgba(252, 49, 49, 0.699);
+  background: #3ac5516b;
   border-radius: 5px;
   color: #eee;
   border: 1px rgba(128, 128, 128, 0.404) solid;
@@ -162,7 +162,7 @@ body #start:hover {
   -webkit-box-shadow: 1px 1px 1px #333, inset 0 0 0 40px #ff0000c5;
           box-shadow: 1px 1px 1px #333, inset 0 0 0 40px #ff0000c5;
   color: black;
-  background: rgba(250, 136, 43, 0.966);
+  background: rgba(214, 159, 114, 0.966);
 }
 
 body .scoreboard {
@@ -194,7 +194,7 @@ body #canvas {
   border: none;
   border-top: 1px rgba(66, 0, 0, 0.561) solid;
   border-left: 1px rgba(66, 0, 0, 0.561) solid;
-  background: linear-gradient(135deg, #ff00006b 0%, #ff0000da 100%);
+  background: linear-gradient(135deg, #3ac5516b 0%, #486351da 100%);
   -webkit-box-shadow: 0 10px 15px black;
           box-shadow: 0 10px 15px black;
   position: relative;
@@ -202,6 +202,7 @@ body #canvas {
   overflow: hidden;
   height: 500px;
   width: 500px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 500px) {

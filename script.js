@@ -68,14 +68,14 @@ function start() {
 function virusPop () {
     let virus = new Image();
 
-    virus.src = "media/basic-pics/pngwave.png"
+    virus.src = "media/basic-pics/virus.png"
 
     virus.classList.add("virus");
     virus.style.top = Math.random() * 350 + "px";
     virus.style.left = Math.random() * 450 + "px";
     
     let x, y;
-    x = y = (Math.random() * 45) + 30;
+    x = y = (Math.random() * 70) + 50;
     virus.style.setProperty("--x", `${x}px`);
     virus.style.setProperty("--y", `${y}px`);
 
